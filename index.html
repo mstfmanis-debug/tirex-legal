@@ -19,9 +19,18 @@
   a { color: #2563EB; }
   strong { color: #0F172A; }
   .updated { font-size: 12px; color: #94A3B8; margin-top: 40px; }
+  nav { font-size: 13px; margin-bottom: 24px; }
+  nav a { margin-right: 14px; }
 </style>
 </head>
 <body>
+
+<nav>
+  <a href="index.html">Gizlilik &amp; Koşullar</a>
+  <a href="hakkimizda.html">Hakkımızda</a>
+  <a href="mesafeli-satis.html">Mesafeli Satış Sözleşmesi</a>
+  <a href="teslimat-iade.html">Teslimat &amp; İade</a>
+</nav>
 
 <h1>TireX — Gizlilik Politikası</h1>
 <p class="subtitle">Akıllı Lastik Oteli &amp; Stok Yönetimi Uygulaması</p>
@@ -49,7 +58,8 @@
 <ul>
   <li><strong>Supabase</strong> (veritabanı ve kimlik doğrulama barındırma) — hesap bilgileriniz ve ticari verileriniz Supabase altyapısında, Row-Level Security ile korunarak saklanır.</li>
   <li><strong>Google Gemini API</strong> (görsel/OCR analizi) — kamerayla lastik yanağı taradığınızda, fotoğraf sadece marka/ebat/DOT yılı metnini okumak için anlık olarak Google'ın Gemini yapay zekâ servisine gönderilir; Google tarafında kalıcı olarak saklanmaz.</li>
-  <li><strong>RevenueCat ve Apple App Store</strong> (abonelik ve ödeme yönetimi) — abonelik satın alma işlemleri Apple'ın App Store altyapısı üzerinden yürütülür; kart bilgileriniz hiçbir zaman bizim veya RevenueCat'in sunucularından geçmez. RevenueCat sadece hangi paketin aktif olduğunu doğrulamak için kullanılır.</li>
+  <li><strong>iyzico</strong> (web ödeme altyapısı) — web sitemiz üzerinden yapılan abonelik ve tek seferlik ödemelerde kart bilgileriniz iyzico'nun PCI-DSS sertifikalı, güvenli altyapısı üzerinden işlenir; kart numarası, son kullanma tarihi veya CVV gibi bilgiler TireX sunucularından hiçbir zaman geçmez veya saklanmaz.</li>
+  <li><strong>RevenueCat ve Apple App Store</strong> (mobil abonelik ve ödeme yönetimi) — mobil uygulama üzerinden yapılan abonelik satın alma işlemleri Apple'ın App Store altyapısı üzerinden yürütülür; kart bilgileriniz hiçbir zaman bizim veya RevenueCat'in sunucularından geçmez. RevenueCat sadece hangi paketin aktif olduğunu doğrulamak için kullanılır.</li>
   <li><strong>Apple</strong> (Sign in with Apple) — Apple hesabınızla giriş yaptığınızda, Apple'ın sağladığı kimlik bilgisi (ad ve e-posta — e-postanızı gizlemeyi seçtiyseniz Apple'ın özel yönlendirme adresi) sadece hesabınızı oluşturmak için kullanılır.</li>
 </ul>
 
@@ -73,7 +83,7 @@
 <p>Hesabınızın güvenliğinden ve girdiğiniz verilerin doğruluğundan siz sorumlusunuz. Uygulamayı yasalara aykırı bir amaçla kullanamazsınız.</p>
 
 <h2>3. Abonelik ve Ödemeler</h2>
-<p>Abonelikler, Apple App Store üzerinden otomatik olarak yenilenir. İstediğiniz zaman App Store &gt; Ayarlar &gt; Abonelikler bölümünden iptal edebilirsiniz. İptal, mevcut faturalama döneminin sonunda geçerli olur; kısmi iade yapılmaz (Apple'ın standart politikası geçerlidir).</p>
+<p>Abonelikler; mobil uygulamada Apple App Store, web sitemizde ise <strong>iyzico</strong> güvenli ödeme altyapısı üzerinden otomatik olarak yenilenir. Mobil uygulamadaki abonelikler App Store &gt; Ayarlar &gt; Abonelikler bölümünden, web üzerindeki abonelikler ise hesap ayarlarından veya <strong>mstfmanis@gmail.com</strong> adresine yazarak iptal edilebilir. İptal, mevcut faturalama döneminin sonunda geçerli olur; kısmi iade yapılmaz. Web üzerinden yapılan satın almalar için detaylı şartlar <a href="mesafeli-satis.html">Mesafeli Satış Sözleşmesi</a> ve <a href="teslimat-iade.html">Teslimat ve İade Şartları</a> sayfalarında yer alır.</p>
 
 <h2>4. Kesintisiz Hizmet ve Çevrimdışı (Offline) Çalışma</h2>
 <p>Uygulama, internet bağlantısı olmadığında da temel işlevlerini (yerel veri önbelleği ile) sürdürmeye çalışır; bağlantı sağlandığında veriler otomatik olarak senkronize edilir. Ancak kesintisiz hizmet garanti edilmez.</p>
